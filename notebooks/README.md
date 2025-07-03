@@ -1,3 +1,5 @@
+# NOTE: On data collection/classification
+
 These notebooks describe the various data collected and how it was presented. 
 
 The data was collected using the standard reddit api (PRAW) that grabbed as much as it could without erroring out due to rate limit. Other than that, very basic clean up such as removing [deleted] users and comments.
