@@ -36,4 +36,4 @@ def classify_stance(df, text_column='body', batch_size=32):
             results.extend(preds)
     return results
 ```
-with prepending the topic sentence for classification with topic for that specific output. 
+with prepending the topic sentence for classification with topic for that specific output. I'll consider uploading a clean notebook of the entire workflow when I have the time, but if you understand how to scrape the reddit api and save to a csv, there isn't anything fancy going on. 
