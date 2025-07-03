@@ -17,6 +17,12 @@ global_time_index = pd.date_range(all_time_bins.min(), all_time_bins.max(), freq
 and stance classification by:
 
 ```python
+
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+
+tokenizer = AutoTokenizer.from_pretrained("dominiks/stance-detection")
+model = AutoModelForSequenceClassification.from_pretrained("dominiks/stance-detection")
+
 def classify_stance(df, text_column='body', batch_size=32):
     model.eval()
     results = []
